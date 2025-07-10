@@ -290,7 +290,7 @@ VOID SpecificInformation::UpdateSkillTable() {
 			ImGui::TableNextColumn();
 
 			// D%
-			sprintf_s(label, 128, "%.0lf", ((DOUBLE)(*itr)->GetDamage() / (DOUBLE)(*monster)->GetSkillTotalDamage() * 100));
+			sprintf_s(label, 128, "%.02lf", ((DOUBLE)(*itr)->GetDamage() / (DOUBLE)(*monster)->GetSkillTotalDamage() * 100));
 			ImGui::Text(label);
 
 			ImGui::TableNextColumn();
