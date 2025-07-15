@@ -20242,6 +20242,9 @@ INSERT INTO Skill VALUES(72001814,'3rd Shift: Subspace Piercer IV','喵道變形
 INSERT INTO Skill VALUES(72001815,'3rd Shift: Subspace Piercer V','喵道變形3式 - 裂縫 V','猫刀・参ノ型・改：空隙斬V','묘도 변형 3식 - 간극 V');
 INSERT INTO Skill VALUES(72001854,'3rd Shift: Subspace Piercer IV [A]','喵道變形3式 - 裂縫 IV [A]','猫刀・参ノ型・改：空隙斬IV [A]','묘도 변형 3식 - 간극 IV [A]');
 INSERT INTO Skill VALUES(72001855,'3rd Shift: Subspace Piercer V [A]','喵道變形3式 - 裂縫 V [A]','猫刀・参ノ型・改：空隙斬V [A]','묘도 변형 3식 - 간극 V [A]');
+INSERT INTO Skill VALUES(72001911,'72001911','天上喵斬 I','72001911','72001911');
+INSERT INTO Skill VALUES(72002011,'72002011','捕食者之怒 I','72002011','72002011');
+INSERT INTO Skill VALUES(72003111,'72003111','喵道密技 - 破滅刀 I','72003111','72003111');
 INSERT INTO Skill VALUES(72021011,'SoulStrike Mastery I [K]','特殊能力精通 I [R]','特殊能力マスタリーI [R]','특수 능력 마스터리 I [P]');
 INSERT INTO Skill VALUES(72021012,'SoulStrike Mastery II [B]','特殊能力精通 II [F]','特殊能力マスタリーII [F]','특수 능력 마스터리 II [F]');
 INSERT INTO Skill VALUES(72021013,'SoulStrike Mastery III [B]','特殊能力精通 III [F]','特殊能力マスタリーIII [F]','특수 능력 마스터리 III [F]');
@@ -20267,8 +20270,10 @@ INSERT INTO Skill VALUES(72130011,'Souldash Jump Attack I  [E]','特殊衝擊跳
 INSERT INTO Skill VALUES(72181011,'Aerial SoulStrike [S]','空中特殊 [H]','空中特殊 [B]','공중 특수 [I]');
 INSERT INTO Skill VALUES(72181012,'Aerial SoulStrike [T]','空中特殊 [I]','空中特殊 [C]','공중 특수 [J]');
 INSERT INTO Skill VALUES(72181013,'Aerial SoulStrike [U]','空中特殊 [J]','空中特殊 [D]','공중 특수 [K]');
+INSERT INTO Skill VALUES(75000311,'75000311','慾望覺醒','75000311','75000311');
 INSERT INTO Skill VALUES(76000111,'Frenzy [F]','侵蝕 [F]','イロージョン [F]','침식 [E]');
 INSERT INTO Skill VALUES(77000111,'Secret Form: Edge of Ruin ','喵道密技 - 破滅','猫刀・秘技：破滅ノ刃','묘도 비기 - 파멸도');
+INSERT INTO Skill VALUES(77000521,'77000521','永恆一閃 I','77000521','77000521');
 INSERT INTO Skill VALUES(81160111,'Indomitable Spear I ','不屈長槍 I','不屈の槍I','불굴의 창 I');
 INSERT INTO Skill VALUES(81170111,'Power Up I','強化輸出 I','出力強化I','출력 강화 I');
 INSERT INTO Skill VALUES(81170112,'Power Up II','強化輸出 II','出力強化II','출력 강화 II');
