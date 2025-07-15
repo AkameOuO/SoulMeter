@@ -364,4 +364,15 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <Target Name="UpdateDatabase"
+          BeforeTargets="PrepareForBuild;Build"
+          Inputs="$(ProjectDir)SWDB.sql"
+          Outputs="$(ProjectDir)SWDB.db"
+          >
+    <Delete Files="$(ProjectDir)SWDB.db" />
+    <Exec
+      Command="sqlite3.exe &quot;$(ProjectDir)SWDB.db&quot; &lt; &quot;$(ProjectDir)SWDB.sql&quot;"
+      ConsoleToMsBuild="true"
+      />
+  </Target>
 </Project>
