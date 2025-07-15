@@ -364,8 +364,11 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Include="$(ProjectDir)SWDB.sql" />
+  </ItemGroup>
   <Target Name="UpdateDatabase"
-          BeforeTargets="PrepareForBuild;Build"
+          BeforeTargets="Build"
           Inputs="$(ProjectDir)SWDB.sql"
           Outputs="$(ProjectDir)SWDB.db"
           >
