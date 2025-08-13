@@ -92,8 +92,8 @@ VOID PlayerTable::Update() {
 			sprintf_s(loss, 128, "%s: %lld/%lld", LANGMANAGER.GetText("STR_MENU_LOSS"), PACKETCAPTURE.GetLoss(), PACKETCAPTURE.GetAllLoss());
 
 		CHAR title[1024] = { 0 };
-		sprintf_s(title, 1024, "%s - %02d:%02d.%01d [v%s_@AFNGP] %s: %lldms %s %s ###DamageMeter", 
-			DAMAGEMETER.GetWorldName(), 
+		sprintf_s(title, 1024, "%s - %02d:%02d.%01d [v%s_@AFNGP] %s: %lldms %s %s ###DamageMeter",
+			DAMAGEMETER.GetWorldName(),
 			(UINT)DAMAGEMETER.GetTime() / (60 * 1000), (UINT)(DAMAGEMETER.GetTime() / 1000) % 60, (UINT)DAMAGEMETER.GetTime() % 1000 / 100,
 			APP_VERSION,
 			LANGMANAGER.GetText("STR_MENU_PING"),
@@ -161,7 +161,7 @@ VOID PlayerTable::SetMainWindowSize() {
 	}
 
 	//SetWindowPos(UIWINDOW.GetHWND(), HWND_NOTOPMOST, pos.x, pos.y, size.x + 1, size.y + 1, SWP_NOACTIVATE);
-	
+
 }
 
 VOID PlayerTable::StoreWindowWidth() {
@@ -217,7 +217,7 @@ VOID PlayerTable::BeginPopupMenu() {
 
 					i--;
 
-					if (ImGui::Selectable(label, DAMAGEMETER.GetCurrentHistoryId() == i) && !DAMAGEMETER.isRun()) 
+					if (ImGui::Selectable(label, DAMAGEMETER.GetCurrentHistoryId() == i) && !DAMAGEMETER.isRun())
 					{
 						if (!DAMAGEMETER.isRun()) {
 							bChangeHistory = true;
@@ -338,7 +338,7 @@ VOID PlayerTable::UpdateTable(FLOAT windowWidth) {
 
 	for (auto itr = DAMAGEMETER.begin(); itr != DAMAGEMETER.end(); itr++) {
 
-		// 
+		//
 		if (UIOPTION.isSoloMode() && DAMAGEMETER.GetPlayerName((*itr)->GetID()) != LANGMANAGER.GetText("STR_TABLE_YOU")) {
 			continue;
 		}
@@ -347,7 +347,7 @@ VOID PlayerTable::UpdateTable(FLOAT windowWidth) {
 		if (DAMAGEMETER.GetPlayerName((*itr)->GetID()) == LANGMANAGER.GetText("PLAYER_NAME_CANT_FIND"))
 			continue;
 
-		// 
+		//
 		if (itr == DAMAGEMETER.begin())
 			max_Damage = (*itr)->GetDamage();
 
@@ -373,7 +373,7 @@ VOID PlayerTable::UpdateTable(FLOAT windowWidth) {
 
 		ImGuiStyle& style = ImGui::GetStyle();
 		ImVec4 saved = ImVec4(style.Colors[0].x, style.Colors[0].y, style.Colors[0].z, style.Colors[0].w);
-		
+
 		UINT32 playerId = (*itr)->GetID();
 		if (playerId == DAMAGEMETER.GetAggro()) {
 			style.Colors[0] = ImVec4(1.0f, 0.0f, 0.0f, 1.0f);
@@ -385,7 +385,7 @@ VOID PlayerTable::UpdateTable(FLOAT windowWidth) {
 		if (DAMAGEMETER.PlayerInAwakening(playerId)) {
 			style.Colors[0] = ImVec4(1.0f, 1.0f, 0.0f, 1.0f);
 		}
-		
+
 		//colors[ImGuiCol_Text] = ImVec4(1.00f, 1.00f, 1.00f, 0.95f);
 		if (ImGui::Selectable(playerName, false, ImGuiSelectableFlags_SpanAllColumns))
 			ToggleSelectInfo((*itr)->GetID());
@@ -400,13 +400,13 @@ VOID PlayerTable::UpdateTable(FLOAT windowWidth) {
 		}
 		else {
 			DOUBLE dps = ((DOUBLE)(*itr)->GetDamage()) / _tableTime;
-			if (UIOPTION.is1K()) 
+			if (UIOPTION.is1K())
 				dps /= 1000;
-			else if (UIOPTION.is1M()) 
+			else if (UIOPTION.is1M())
 				dps /= 1000000;
 			else if (UIOPTION.is10K())
 				dps /= 10000;
-			if (UIOPTION.is1M()) 
+			if (UIOPTION.is1M())
 				TextCommmaIncludeDecimal(dps, sizeof(comma), comma);
 			else {
 				sprintf_s(label, 128, "%.0lf", dps);
@@ -414,7 +414,7 @@ VOID PlayerTable::UpdateTable(FLOAT windowWidth) {
 			}
 			if (UIOPTION.is1K())
 				strcat_s(comma, 128, LANGMANAGER.GetText("STR_DISPLAY_UNIT_1K"));
-			else if (UIOPTION.is1M()) 
+			else if (UIOPTION.is1M())
 				strcat_s(comma, 128, LANGMANAGER.GetText("STR_DISPLAY_UNIT_1M"));
 			else if (UIOPTION.is10K())
 				strcat_s(comma, 128, LANGMANAGER.GetText("STR_DISPLAY_UNIT_10K"));
@@ -423,17 +423,17 @@ VOID PlayerTable::UpdateTable(FLOAT windowWidth) {
 			bool isFirstElement = ((itr - DAMAGEMETER.begin()) == 0);
 			PLOTWINDOW.AddData((*itr)->GetID(), DAMAGEMETER.GetPlayerName((*itr)->GetID()), dps, _tableTime, isFirstElement);
 		}
-		
+
 
 		ImGui::TableNextColumn();
 
 		// D%
 		if (DAMAGEMETER.GetPlayerTotalDamage() == 0) {
-			sprintf_s(label, 128, "%.0lf", (float)0);
+			sprintf_s(label, 128, "%.02lf", (float)0);
 			ImGui::Text(label);
 		}
 		else {
-			sprintf_s(label, 128, "%.0lf", ((DOUBLE)(*itr)->GetDamage() / (DOUBLE)DAMAGEMETER.GetPlayerTotalDamage()) * 100);
+			sprintf_s(label, 128, "%.02lf", ((DOUBLE)(*itr)->GetDamage() / (DOUBLE)DAMAGEMETER.GetPlayerTotalDamage()) * 100);
 			ImGui::Text(label);
 		}
 
@@ -563,7 +563,7 @@ VOID PlayerTable::UpdateTable(FLOAT windowWidth) {
 		}
 		else {
 			// Attack+Crit SUM
-			// TODO: Re-enable M option if we ever get there 
+			// TODO: Re-enable M option if we ever get there
 			DOUBLE gongchihap = (DOUBLE)playerMetaData->GetStat(StatType::MaxAttack) + (DOUBLE)playerMetaData->GetStat(StatType::CritDamage);
 			if (UIOPTION.is1K())
 				gongchihap /= 1000;
@@ -609,7 +609,7 @@ VOID PlayerTable::UpdateTable(FLOAT windowWidth) {
 			sprintf_s(label, 128, "%.1f", statTmp);
 			PLOTWINDOW.AddAbData(statTmp, _tableTime);
 			ImGui::Text(label);
-			
+
 			ImGui::TableNextColumn();
 			// BD
 			statTmp = playerMetaData->GetSpecialStat(SpecialStatType::BossDamageAddRate);
@@ -1183,11 +1183,11 @@ VOID PlayerTable::CheckUpdate()
 {
 
 	DWORD error = ERROR_SUCCESS;
-	
+
 	do
 	{
 
-		for (BYTE i = 0; i < 2; i++) 
+		for (BYTE i = 0; i < 2; i++)
 		{
 
 			CHAR url[128] = { 0 };
