@@ -4335,6 +4335,7 @@ INSERT INTO Map VALUES(28233,'Broken Way - Vile Stench of the Battleground','破
 INSERT INTO Map VALUES(28241,'Broken Way - Final Mission','破碎之路 - 最終任務','ブロークンウェイ - 最終任務','브로큰 웨이 - 최종 임무');
 INSERT INTO Map VALUES(28242,'Broken Way - Final Mission','破碎之路 - 最終任務','ブロークンウェイ - 最終任務','브로큰 웨이 - 최종 임무');
 INSERT INTO Map VALUES(28243,'Broken Way - Final Mission','破碎之路 - 最終任務','ブロークンウェイ - 最終任務','브로큰 웨이 - 최종 임무');
+INSERT INTO Map VALUES(29001,'Ruthless Gold','無情的黃金','Ruthless Gold','Ruthless Gold');
 INSERT INTO Map VALUES(29111,'Fragment of Fairyland','妖精鄉的一角','妖精香の片鱗','요정향의 편린');
 INSERT INTO Map VALUES(29121,'Ideological Conflicts','對立的理念','対立する理念','대립하는 이념');
 INSERT INTO Map VALUES(29131,'Delusion about Cherry Blossom','粉紅妄想','桃色の妄想','분홍빛 망상');
@@ -18647,6 +18648,7 @@ INSERT INTO Monster VALUES(41102209,NULL,NULL,'ランブルチャイルド','럼
 INSERT INTO Monster VALUES(41102251,NULL,NULL,'エルダーキッド','엘더 키드',4);
 INSERT INTO Monster VALUES(41103151,'Giant One','大傢伙','ジャイアントワン','자이언트 원',3);
 INSERT INTO Monster VALUES(41104151,'Dying Giant One','瀕臨死亡的大傢伙','死にゆくジャイアントワン','죽어가는 자이언트 원',4);
+INSERT INTO Monster VALUES(41111111,'Rosca','洛斯卡','Rosca','Rosca',4);
 INSERT INTO Monster VALUES(41201011,'Experiment No.1','實驗體1號','実験体1番','실험체 1번',3);
 INSERT INTO Monster VALUES(41202001,'Sufferer','被害者','サファラー','서퍼러',1);
 INSERT INTO Monster VALUES(41202002,'Collapsed Kid','虛脫孩童','コラプスドキッド','컬랩스드 키드',1);
