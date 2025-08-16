@@ -3614,12 +3614,13 @@ INSERT INTO Map VALUES(21020,'Vile Predator [Solo]','頑劣掠【單人】','ヴ
 INSERT INTO Map VALUES(21021,'Collateral Damage [HARD]','必然災禍【困難】','コラテラルダメージ[VH]','콜래트럴 대미지 [하드]');
 INSERT INTO Map VALUES(21022,'Collateral Damage [HARD]','必然災禍【困難】','コラテラルダメージ[VH]','콜래트럴 대미지 [하드]');
 INSERT INTO Map VALUES(21029,'Tragic Fairy [HARD]','悲劇的妖精【困難】','[VH]トラジディ・フェアリー','트레지디 페어리 [하드]');
-INSERT INTO Map VALUES(21031,'Violent Sun Hero [Solo]','狂暴烈曜英雄【单人】','ヴァイオレント・サン：ヒーロー[ソロ]','바이올런트 선 히어로 [솔로]');
+INSERT INTO Map VALUES(21031,'Violent Sun Hero [Solo]','狂暴烈曜英雄【單人】','ヴァイオレント・サン：ヒーロー[ソロ]','바이올런트 선 히어로 [솔로]');
 INSERT INTO Map VALUES(21032,'Violent Sun Hero [Party]','狂暴烈曜英雄【隊伍】','ヴァイオレント・サン：ヒーロー[パーティー]','바이올런트 선 히어로 [파티]');
-INSERT INTO Map VALUES(21033,'Violent Sun Hero [Solo]','狂暴烈曜英雄【单人】','ヴァイオレント・サン：ヒーロー[ソロ]','바이올런트 선 히어로 [솔로]');
+INSERT INTO Map VALUES(21033,'Violent Sun Hero [Solo]','狂暴烈曜英雄【單人】','ヴァイオレント・サン：ヒーロー[ソロ]','바이올런트 선 히어로 [솔로]');
 INSERT INTO Map VALUES(21034,'Violent Sun Hero [Party]','狂暴烈曜英雄【隊伍】','ヴァイオレント・サン：ヒーロー[パーティー]','바이올런트 선 히어로 [파티]');
-INSERT INTO Map VALUES(21041,'Broken Savior','破滅救贖','ブロークンセイヴァー','브로큰 세이비어');
-INSERT INTO Map VALUES(21042,'Broken Savior','破滅救贖','ブロークンセイヴァー','브로큰 세이비어');
+INSERT INTO Map VALUES(21041,'Broken Savior Hero [Party]','破滅救贖英雄【隊伍】','ブロークンセイヴァー：ヒーロー[パーティー]','브로큰 세이비어 히어로 [파티]');
+INSERT INTO Map VALUES(21043,'Broken Savior Hero [Solo]','破滅救贖英雄【單人】','ブロークンセイヴァー：ヒーロー[ソロ]','브로큰 세이비어 히어로 [솔로]');
+INSERT INTO Map VALUES(21045,'Broken Savior Hero [Maniac]','破滅救贖英雄【專家】','ブロークンセイヴァー：ヒーロー[EX]','브로큰 세이비어 히어로 [매니악]');
 INSERT INTO Map VALUES(21051,'Golden Citadel','金色城堡','ディストリクトレイド - ゴールデンシタデル','골든 시타델');
 INSERT INTO Map VALUES(21061,'The Primal','原始勢力','ザ・プライマル','더 프라이멀');
 INSERT INTO Map VALUES(21062,'The Primal (Hero)','原始勢力英雄模式','ザ・プライマル:ヒーロー','더 프라이멀 히어로');
@@ -4036,7 +4037,7 @@ INSERT INTO Map VALUES(25011,'Casual Raid - Hateful Last Carnival','區域突襲
 INSERT INTO Map VALUES(25012,'Casual Raid - Hateful Junk Hive','區域突襲副本 - 憎惡的暗影蜂巢','カジュアルレイド - 憎悪のジャンクハイブ','캐주얼 레이드 - 증오의 정크 하이브');
 INSERT INTO Map VALUES(25013,'Casual Raid - Hateful Bandit Highway','區域突襲副本 - 憎惡的土匪公路','カジュアルレイド - 憎悪のバンディットハイウェイ','캐주얼 레이드 - 증오의 밴디트 하이웨이');
 INSERT INTO Map VALUES(25014,'Casual Raid - Hateful Iron Castle','區域突襲副本 - 憎惡的鋼鐵城堡','カジュアルレイド - 憎悪のアイアンキャッスル','캐주얼 레이드 - 증오의 아이언 캐슬');
-INSERT INTO Map VALUES(25019,'Collateral Damage [Rank]','必然災【排名】','コラテラルダメー[ランキング]','콜래트럴 대미지 [솔로]');
+INSERT INTO Map VALUES(25019,'Collateral Damage [Rank]','必然災禍【排名】','コラテラルダメー[ランキング]','콜래트럴 대미지 [솔로]');
 INSERT INTO Map VALUES(25020,'Scarlet Madness','瘋魔緋紅','スカーレットマッドネス','스칼렛 매드니스');
 INSERT INTO Map VALUES(25021,NULL,NULL,NULL,'바이올런트 선');
 INSERT INTO Map VALUES(25022,'Hidden Hideout Hero [Rank]','隱匿藏身處英【排名】','ヒドゥン·ハイドアウトヒーロ[ランキング]','히든 하이드 아웃 히어로 [솔로]');
