@@ -92,7 +92,7 @@ VOID PlayerTable::Update() {
 			sprintf_s(loss, 128, "%s: %lld/%lld", LANGMANAGER.GetText("STR_MENU_LOSS"), PACKETCAPTURE.GetLoss(), PACKETCAPTURE.GetAllLoss());
 
 		CHAR title[1024] = { 0 };
-		sprintf_s(title, 1024, "%s - %02d:%02d.%01d [v%s_@AFNGP] %s: %lldms %s %s ###DamageMeter",
+		sprintf_s(title, 1024, "%s - %02d:%02d.%01d [v%s_@AkameOuO] %s: %lldms %s %s ###DamageMeter",
 			DAMAGEMETER.GetWorldName(),
 			(UINT)DAMAGEMETER.GetTime() / (60 * 1000), (UINT)(DAMAGEMETER.GetTime() / 1000) % 60, (UINT)DAMAGEMETER.GetTime() % 1000 / 100,
 			APP_VERSION,
@@ -1197,7 +1197,7 @@ VOID PlayerTable::CheckUpdate()
 
 			httplib::Client cli(url);
 
-			auto res = cli.Get("/AFNGP/SoulMeter/GLBSW/VERSION");
+			auto res = cli.Get("/AkameOuO/SoulMeter/GLBSW/VERSION");
 
 			if (res != nullptr && res.error() == httplib::Error::Success && res->status == 200) {
 				_isNewestVersion = strcmp(res->body.c_str(), APP_VERSION) == 0;
