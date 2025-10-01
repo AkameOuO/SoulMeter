@@ -1,21 +1,23 @@
-# SoulMeter by AFN
+# SoulMeter
 
-## Donate
+## Notice
 
-<a href='https://ko-fi.com/B0B8SC4MT' target='_blank'><img height='50' style='border:0px;height:50px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+This repository won't offer releases. You can compile yourself through Visual Studio.(requires sqlite3.exe in PATH)\
+Or you can build a SWDB.db from [SWDB.sql](./Soulworker%20Utility/SWDB.sql) and replace old one.\
+For newbies, maybe try [DB Browser for SQLite](https://sqlitebrowser.org/). (File > Import > Database from SQL file...)
 
 ## Information
 
 This program allows to capture damage information in SW using network packets (WinDivert).
 
-Currently supports EN, TC, JP, KR versions. Meter is also available in those 4 languages.
+Currently supports EN, TC servers. Meter is also available in those 2 languages.
+KR and JP won't be maintained in this repository.
 
 Currently managed branches:
-- JP (Main): [https://github.com/AFNGP/SoulMeter](https://github.com/AFNGP/SoulMeter)
-- KR (KRSW): [https://github.com/AFNGP/SoulMeter/tree/KRSW](https://github.com/AFNGP/SoulMeter/tree/KRSW)
-- GLB (GLBSW): [https://github.com/AFNGP/SoulMeter/tree/GLBSW](https://github.com/AFNGP/SoulMeter/tree/GLBSW)
+- GLB (GLBSW)
 
 Previous contributors:
+- [AFNGP](https://github.com/AFNGP)
 - [NEON](https://github.com/neonr-0)
 - [ga0321](https://github.com/ga0321)
 - [nyanchii](https://github.com/nyanchii)
@@ -52,7 +54,5 @@ You need to run DPS meter before entering maze
 Also, USE AT YOUR OWN RISK
 
 I recommend not to talk about dps meter at in-game public chat
-
-Issue and suggest: https://discord.gg/zxFpQPFjE5
 
 If you can't open, try install this: https://github.com/abbodi1406/vcredist/releases
